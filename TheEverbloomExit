@@ -1,5 +1,6 @@
 <If Condition="Me.ZoneId == 7109" >
 	<CustomBehavior File="RunCode" Code="await InstanceTimer.WaitForTimeAsync(TimeSpan.FromSeconds(370));" />
+	<CustomBehavior File="ForcedDismount" />
 	<If Condition="(Me.Class == WoWClass.Rogue) &amp;&amp; !Me.HasAura(1784)"><CustomBehavior File="Misc\RunLua" Lua="CastSpellByID(1784);" /></If>
 	<CustomBehavior File="GoThruPortal" X="417.59" Y="1304.31" Z="125.50" />
 	<CustomBehavior File="WaitTimer" WaitTime="10000" TerminateWhen="!Me.IsInInstance" />
